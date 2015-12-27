@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp">
+    <thead>
+    <tr>
+        <th>Lesson</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+    </tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>1</td>
+    <td>Math</td>
+    <td>Math</td>
+    <td>Math</td>
+    <td>Math</td>
+    <td>Math</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Physics</td>
+    <td>Math</td>
+    <td></td>
+    <td>Math</td>
+    <td>Math</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>History</td>
+    <td>Math</td>
+    <td>Math</td>
+    <td>Math</td>
+    <td></td>
+</tr>
+<tr>
+    <td>4</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>5</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+</tbody>
+    </table>
+
+    <div id="dialog-form" title="Edit lesson">
+      <p class="validateTips">All form fields are required.</p>
+
+      <form>
+        <fieldset>
+          <label for="name">Title</label>
+          <input type="text" name="title" id="name" value="Math" class="text ui-widget-content ui-corner-all">
+
+          <!-- Allow form submission with keyboard without duplicating the dialog button -->
+          <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+        </fieldset>
+      </form>
+    </div>
+{% endblock %}
